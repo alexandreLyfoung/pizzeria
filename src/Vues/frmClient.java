@@ -33,7 +33,8 @@ public class frmClient extends JFrame {
                     Client client = new Client();
                     if (clientController.IsClient(txtNom.getText(), txtPrenom.getText(), client))
                     {
-
+                        FrmClientAccueil frmClientAccueil = new FrmClientAccueil(connexion, client);
+                        frmClientAccueil.setVisible(true);
                     }
                 }
             }

@@ -1,8 +1,11 @@
 package Entities;
 
 public class Client {
+    private int id;
     private String nom;
     private String prenom;
+    private double solde;
+    private int nbPizza;
 
     public Client(){}
     public Client(String nom, String prenom) {
@@ -12,6 +15,14 @@ public class Client {
 
     public String getNom() {
         return nom;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setNom(String nom) {
@@ -24,5 +35,21 @@ public class Client {
 
     public void setPrenom(String prenom) {
         this.prenom = prenom;
+    }
+
+    public double getSolde() {
+        return solde;
+    }
+
+    public void setSolde(double solde) {
+        this.solde = solde;
+    }
+
+    public int getNbPizza() {
+        return nbPizza;
+    }
+
+    public void setNbPizza(int nbPizza) {
+        this.nbPizza = nbPizza;
     }
 }
