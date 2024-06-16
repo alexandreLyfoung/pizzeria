@@ -35,5 +35,14 @@ public class FrmConnexion extends JFrame {
                 frmClient.toFront();
             }
         });
+        btnAdmin.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                FrmAdmin frmAdmin = new FrmAdmin();
+                frmAdmin.setVisible(true);
+                frmAdmin.toFront();
+                FrmConnexion.this.dispose();
+            }
+        });
     }
 }

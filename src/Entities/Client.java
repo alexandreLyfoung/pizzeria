@@ -7,7 +7,10 @@ public class Client {
     private double solde;
     private int nbPizza;
 
-    public Client(){}
+    public Client(){};
+
+    public Client(int idClient, String nom, String prenom){}
+
     public Client(String nom, String prenom) {
         this.nom = nom;
         this.prenom = prenom;
